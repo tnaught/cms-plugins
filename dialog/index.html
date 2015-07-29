@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>弹层</title>
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #dcdcdc;
+            height: 100%;
+        }
+        .content {
+            height: 600%;
+        }
+        .mask {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: #00f;
+            opacity: 0.1;
+            z-index: 1001;
+        }
+        .modal {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+               -moz-transform: translate(-50%, -50%);
+                 -o-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background: #f90;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="content">
+        
+    </div>
+    <div class="mask">
+        <div class="modal">
+            <div class="modal-header">
+                
+            </div>
+            <div class="modal-body">
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>

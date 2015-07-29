@@ -1,0 +1,30 @@
+整理现有类似插件实现的功能：
+1.点击一个button或者链接，打开dialog
+modal用的是html中已经存在的节点
+打开后增加样式，使modal保持居中
+position:fixed;
+top:50%;
+left: 50%;
+margin-top: -61px;
+margin-left: -230px;
+z-index: 2;
+display: block;
+
+mask appendTo body bottom, add css
+z-index: 1
+position: fixed
+top: 0
+right: 0
+bottom: 0
+width: 100%;
+height: 100%
+z-index: 1
+opacity: .75
+background: rgb(0,0,0)
+
+
+2.点击除modal的区域可以关闭modal
+
+3.modal上有关闭的按钮
+
+4.当modal里面的内容宽度或者高度发生变化的时候依然保持居中
